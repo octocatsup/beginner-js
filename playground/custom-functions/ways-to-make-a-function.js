@@ -45,3 +45,21 @@
 // (function (age) {
 //   return `You are cool and age ${age}`;
 // })(21);
+
+// Methods
+const wes = {
+  name: 'Wes Bos',
+  // Method
+  sayHi() {
+    console.log('Hey, Wes');
+    return 'Hey, Wes';
+  },
+  // Shorthand method
+  yellHi() {
+    console.log('HEY, WEEESSSSS!');
+  },
+  // Arrow function
+  whisperHi: () => {
+    console.log("hii, weeesss, i'm a mouse");
+  },
+};
