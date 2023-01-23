@@ -24,4 +24,3 @@
 // Arrow function with one parameter, = (inches)
 // You can remove the parenthesis, = inches
 const inchToCM = (inches) => inches * 2.54;
-inchToCM(12);
