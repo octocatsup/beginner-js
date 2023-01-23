@@ -56,10 +56,29 @@ const wes = {
   },
   // Shorthand method
   yellHi() {
-    console.log('HEY, WEEESSSSS!');
+    console.log('HEEEYY, WEEEEESS!');
   },
   // Arrow function
   whisperHi: () => {
     console.log("hii, weeesss, i'm a mouse");
   },
 };
+
+// Callback functions
+// When someone clicks something run this, or after some time run this
+// Click callback
+const button = document.querySelector('.clickMe');
+
+// Callback previous function expression
+// console.log(button);
+// button.addEventListener('click', wes.yellHi);
+
+// Callback anonymous function
+button.addEventListener('click', () => {
+  console.log('Nice job!!');
+});
+
+// Timer callback
+setTimeout(() => {
+  console.log('Done!! Time to eat!');
+}, 1000);
