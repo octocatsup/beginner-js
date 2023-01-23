@@ -23,6 +23,22 @@
 
 // Arrow function with one parameter, = (inches)
 // You can remove the parenthesis, = inches
-const inchToCM = (inches) => inches * 2.54;
+// const inchToCM = (inches) => inches * 2.54;
 
-const add = (a, b = 3) => a + b;
+// Arrow function example
+// const add = (a, b = 3) => a + b;
+
+// Function expression including an array
+// function makeABaby(first, last) {
+//   const baby = {
+//     name: `${first} ${last}`,
+//     age: 0,
+//   };
+//   return baby;
+// }
+
+//
+const makeABaby = (first, last) => ({
+  name: `${first} ${last}`,
+  age: 0,
+});
