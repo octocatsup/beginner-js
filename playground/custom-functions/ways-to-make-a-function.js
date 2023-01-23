@@ -37,8 +37,11 @@
 //   return baby;
 // }
 
-//
-const makeABaby = (first, last) => ({
-  name: `${first} ${last}`,
-  age: 0,
-});
+// Arrow functions are not always the answer
+// const makeABaby = (first, last) => ({ name: `${first} ${last}`, age: 0 });
+
+// Immediately invoked function expression (IIFE)
+// aka an immediately run/ran function expression
+// (function (age) {
+//   return `You are cool and age ${age}`;
+// })(21);
