@@ -1,11 +1,15 @@
 const people = [
   { name: 'Wes', cool: true, country: 'Canada' },
-  { name: 'Scott', cool: true, country: 'Merica' },
+  { name: 'Scott', cool: true, country: "'Merica" },
   { name: 'Snickers', cool: false, country: 'Dog Country' },
 ];
 
 people.forEach((person, index) => {
-  console.log(person.name);
+  // console.groupCollapsed(`${person.name}`);
+  // console.log(person.country);
+  // console.log(person.cool);
+  // console.log('DONE!');
+  // console.groupEnd(`${person.name}`);
 });
 
 // Console Methods
@@ -29,7 +33,7 @@ function doctorize(name) {
 }
 
 function greet(name) {
-  doesntExist();
+  doesntExist(); // Causes an error
   return `Hello ${name}`;
 }
 
@@ -38,8 +42,15 @@ function go() {
   console.log(name);
 }
 
+function bootstrap() {
+  console.log('Starting the app!');
+  go();
+}
+
+bootstrap();
+
 const button = document.querySelector('.bigger');
-button.addEventListener('click', function(e) {
+button.addEventListener('click', (e) => {
   const newFontSize =
     parseFloat(getComputedStyle(e.currentTarget).fontSize) + 1;
   e.currentTarget.style.fontSize = `${newFontSize}px`;
