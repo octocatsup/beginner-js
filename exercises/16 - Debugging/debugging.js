@@ -47,7 +47,7 @@ function bootstrap() {
   go();
 }
 
-bootstrap();
+// bootstrap();
 
 const button = document.querySelector('.bigger');
 button.addEventListener('click', (e) => {
